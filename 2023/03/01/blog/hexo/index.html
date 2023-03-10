@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>무료로 hexo 블로그 만들기 | 커피맨</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="blog" />
+    
+    <meta name="description" content="개요정적 웹사이트 생성기 hexo를 이용해서 블로그를 만든후 github page까지 반영하는 방법에 대해서 알아보자.커피맨 블로그를 만들면서 작업했던 내용들을 정리했고. 차근차근 따라서 진행하면 coffeeman1.github.io와같은 멋진 블로그를 무료를 만들수 있다. 사전준비사항준비사항은 아래와 같으며 본 블로그에 1,2,3 단계에 대해서 모두">
+<meta property="og:type" content="article">
+<meta property="og:title" content="무료로 hexo 블로그 만들기">
+<meta property="og:url" content="http://coffeeman1.github.io/2023/03/01/blog/hexo/index.html">
+<meta property="og:site_name" content="커피맨">
+<meta property="og:description" content="개요정적 웹사이트 생성기 hexo를 이용해서 블로그를 만든후 github page까지 반영하는 방법에 대해서 알아보자.커피맨 블로그를 만들면서 작업했던 내용들을 정리했고. 차근차근 따라서 진행하면 coffeeman1.github.io와같은 멋진 블로그를 무료를 만들수 있다. 사전준비사항준비사항은 아래와 같으며 본 블로그에 1,2,3 단계에 대해서 모두">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="http://coffeeman1.github.io/2023/03/01/blog/hexo/img1.png">
+<meta property="article:published_time" content="2023-03-01T14:11:03.000Z">
+<meta property="article:modified_time" content="2023-03-10T14:44:53.014Z">
+<meta property="article:author" content="커피맨">
+<meta property="article:tag" content="blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://coffeeman1.github.io/2023/03/01/blog/hexo/img1.png">
+    
+
+    
+
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.5.0/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                        <img src='https://hits.sh/coffeeman1.github.io.svg?view=today-total&style=plastic' />
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">홈</a>
+                                </li>
+                            
+                                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/blog/">blog</a></li></ul>
+                                
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">내 정보</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="검색" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="찾고자 하는 포스트를 검색하세요." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '포스트',
+            PAGES: '페이지',
+            CATEGORIES: '카테고리',
+            TAGS: '태그',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/blog/">blog</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-blog/hexo" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        무료로 hexo 블로그 만들기
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/2023/03/01/blog/hexo/" class="article-date">
+       <time datetime="2023-03-01T14:11:03.000Z" itemprop="datePublished">2023-03-01</time>
+    </a>
+  </div>
+
+
+<div class="article-date">
+  <i class="fa fa-calendar-plus-o"></i>
+  <a href="/2023/03/01/blog/hexo/" class="article-date">
+     <time datetime="2023-03-10T14:44:53.014Z" itemprop="dateModified">2023-03-10</time>
+  </a>
+</div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/blog/" rel="tag">blog</a>
+    </div>
+
+                
+
+                
+   <div class="article-counter">
+      <i class="fa fa-file-word-o"></i>
+      <span class="post-count-item-text">Symbols count in article: </span>
+      <span class="post-count">1.4k</span>
+      <i class="fa fa-clock-o"></i>
+      <span class="post-time-item-text">소요 시간: </span>
+      <span class="post-count">8 분. </span>
+   </div>
+
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+
+            <img src="/2023/03/01/blog/hexo/img1.png" class="" title="hex이미지">
+
+<h2 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h2><p>정적 웹사이트 생성기 hexo를 이용해서 블로그를 만든후 github page까지 반영하는 방법에 대해서 알아보자.<br>커피맨 블로그를 만들면서 작업했던 내용들을 정리했고. 차근차근 따라서 진행하면 coffeeman1.github.io와<br>같은 멋진 블로그를 무료를 만들수 있다.</p>
+<h2 id="사전준비사항"><a href="#사전준비사항" class="headerlink" title="사전준비사항"></a>사전준비사항</h2><p>준비사항은 아래와 같으며 본 블로그에 1,2,3 단계에 대해서 모두 정리해 두었으니 링크를 통해 사전준비를 끝내자.</p>
+<ol>
+<li><a href="/2023/03/02/blog/github-regist/">github 계정</a></li>
+<li><a href="/2023/03/04/github-page1/">github page 생성</a></li>
+<li><a href="/2023/03/04/github-page2/">github ssh 연결</a></li>
+</ol>
+<h2 id="hexo-설치"><a href="#hexo-설치" class="headerlink" title="hexo 설치"></a>hexo 설치</h2><p>아래 명령어를 입력하여 전역으로 hexo-cli 설치</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<p>아래 명령어를 입력하여 hexo blog를 생성한다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+
+<p>아래 명령어를 입력하여 hexo server 실행</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 접속해서 아래와 같은 화면이 나오면 설치 완료</p>
+<img src="/2023/03/01/blog/hexo/img.png" class="" title="hex설치완료">
+
+<h2 id="hexo-테마-적용하기"><a href="#hexo-테마-적용하기" class="headerlink" title="hexo 테마 적용하기"></a>hexo 테마 적용하기</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a> 에서 hexo 다양한 테마를 다운로드 받을수 있다.<br>본 블로그에서 사용하는 theme은 <a target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-theme-hueman">https://github.com/ppoffice/hexo-theme-hueman</a> 은 이용했고 23년 3월10일 현재<br>가장 최근 버전은  2020년 6월 21일 릴리즈된 0.5.0 버전이다.</p>
+<h3 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h3><p>설치는 <a target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-theme-hueman/wiki/Installation">https://github.com/ppoffice/hexo-theme-hueman/wiki/Installation</a> 문서를 보고 참고함</p>
+<p>먼저 프로젝트를 blog 폴더 아래에 themes&#x2F;hueman 로 복제함</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br><span class="line">git clone https://github.com/ppoffice/hexo-theme-hueman.git themes/hueman</span><br></pre></td></tr></table></figure>
+
+<p>실행결과</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Cloning into &#x27;themes/hueman&#x27;...</span><br><span class="line">remote: Enumerating objects: 2277, done.</span><br><span class="line">remote: Counting objects: 100% (16/16), done.</span><br><span class="line">remote: Compressing objects: 100% (14/14), done.</span><br><span class="line">remote: Total 2277 (delta 3), reused 11 (delta 2), pack-reused 2261</span><br><span class="line">Receiving objects: 100% (2277/2277), 5.77 MiB | 6.42 MiB/s, done.</span><br><span class="line">Resolving deltas: 100% (1218/1218), done.</span><br></pre></td></tr></table></figure>
+
+<p>blog 폴더의 _confi.yml파일에서 theme을 파일을 열어서 아래와 같이 설치한 theme명으로 수정한다</p>
+<p><del>theme: landscape</del></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">... 중략 ...</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Extensions</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="comment"># Plugins: https://hexo.io/plugins/</span></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="comment"># Themes: https://hexo.io/themes/</span></span></span><br><span class="line">theme: hueman</span><br><span class="line">... 중략 ...</span><br></pre></td></tr></table></figure>
+<p>themes\hueman 디렉토리로 이동한후 _config.yml.example 파일일 _config.yml로 수정한다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd cd themes/hueman</span><br><span class="line">mv _config.yml.example _config.yml</span><br></pre></td></tr></table></figure>
+
+<h3 id="실행"><a href="#실행" class="headerlink" title="실행"></a>실행</h3><p>상위 디렉토리로 이동한후 hexo 서버를 구동시킨다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ..</span><br><span class="line">cd ..</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>실행결과</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<p>웹브라우저에서 url <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 를 입력하고 아래와 같은 그림이 나오면 성공 </p>
+<img src="/2023/03/01/blog/hexo/hexo1122.png" class="" title="hexo테마적용완료">
+
+<h2 id="hexo-환경설정"><a href="#hexo-환경설정" class="headerlink" title="hexo 환경설정"></a>hexo 환경설정</h2><p>블로그 환경설정을 위해  blog&#x2F;_config.xml 파일을 아래와 같이 수정함.</p>
+<h3 id="사이트및-url-정보"><a href="#사이트및-url-정보" class="headerlink" title="사이트및 url 정보"></a>사이트및 url 정보</h3><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title</span>: <span class="string">커피맨4</span></span><br><span class="line"><span class="attr">subtitle</span>: <span class="string">커피맨4번째 블로그 입니다.</span></span><br><span class="line"><span class="attr">description</span>: <span class="string">블로그 테스트를 위해서 환경설정한 내용입니다.</span></span><br><span class="line"><span class="attr">keywords</span>:<span class="string"></span></span><br><span class="line"><span class="attr">author</span>: <span class="string">coffeeman</span></span><br><span class="line"><span class="attr">language</span>: <span class="string">ko</span></span><br><span class="line"><span class="attr">timezone</span>: <span class="string">asia/seoul</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url</span>: <span class="string">http://coffeeman4.github.io</span></span><br></pre></td></tr></table></figure>
+<h3 id="github-에-배포를-위한-deploy-정보"><a href="#github-에-배포를-위한-deploy-정보" class="headerlink" title="github 에 배포를 위한 deploy 정보"></a>github 에 배포를 위한 deploy 정보</h3><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy</span>:<span class="string"></span></span><br><span class="line">  <span class="attr">type</span>: <span class="string">git</span></span><br><span class="line">  <span class="attr">repo</span>: <span class="string">git@github.com:coffeeman4/coffeeman4.github.io.git</span></span><br><span class="line">  <span class="attr">branch</span>: <span class="string">main</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="배포하기"><a href="#배포하기" class="headerlink" title="배포하기"></a>배포하기</h2><h3 id="준비물"><a href="#준비물" class="headerlink" title="준비물"></a>준비물</h3><p>배포를 위해 hexo-deployer-git 플러그인을 설치한다. 설치명령어는 아래와 같다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h3 id="배포순서"><a href="#배포순서" class="headerlink" title="배포순서"></a>배포순서</h3><p>배포는 먼저 정적인 페이지(html)를 만들고 github page 쪽으로 deploy 하는 형태로 진행한다.</p>
+<div id="flowchart-0" class="flow-chart"></div>
+
+<h3 id="정적-페이지-만들기"><a href="#정적-페이지-만들기" class="headerlink" title="정적 페이지 만들기"></a>정적 페이지 만들기</h3><p>먼저 배포될 디렉토릴 파일을 깨끗히 정리한다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<p>실행결과</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">INFO  Validating config</span><br><span class="line">INFO  Deleted database.</span><br><span class="line">INFO  Deleted public folder.</span><br></pre></td></tr></table></figure>
+
+<p>아래 명령어를 입력하여 정적 페이지를 생성한다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<p>정상적으로 실행되면 아래와 같이 public 디렉토리에 블로그 구성을 필요한 파일들이 생성됨을 확인할수 있다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded in 110 ms</span><br><span class="line">INFO  Generated: archives/2023/index.html</span><br><span class="line">INFO  Generated: archives/index.html</span><br><span class="line">INFO  Generated: index.html</span><br><span class="line">INFO  Generated: css/fonts/fontawesome-webfont.woff2</span><br><span class="line">INFO  Generated: js/script.js</span><br><span class="line">INFO  Generated: fancybox/jquery.fancybox.min.css</span><br><span class="line">INFO  Generated: archives/2023/03/index.html</span><br><span class="line">INFO  Generated: libs/justified-gallery/justifiedGallery.min.css</span><br><span class="line">INFO  Generated: libs/font-awesome/css/font-awesome.css</span><br><span class="line">INFO  Generated: css/images/logo-header.png</span><br><span class="line">INFO  Generated: css/fonts/fontawesome-webfont.woff</span><br><span class="line">INFO  Generated: libs/font-awesome/fonts/fontawesome-webfont.ttf</span><br><span class="line">INFO  Generated: libs/titillium-web/fonts/7XUFZ5tgS-tD6QamInJTcSo_WB_cotcEMUw1LsIE8mM.woff2</span><br><span class="line">INFO  Generated: libs/source-code-pro/styles.css</span><br><span class="line">INFO  Generated: js/main.js</span><br><span class="line">INFO  Generated: libs/source-code-pro/fonts/mrl8jkM18OlOQN8JLgasD9V_2ngZ8dMf8fLgjYEouxg.woff2</span><br><span class="line">INFO  Generated: js/insight.js</span><br><span class="line">INFO  Generated: libs/titillium-web/styles.css</span><br><span class="line">INFO  Generated: fancybox/jquery.fancybox.min.js</span><br><span class="line">INFO  Generated: css/style.css</span><br><span class="line">INFO  Generated: libs/justified-gallery/jquery.justifiedGallery.min.js</span><br><span class="line">INFO  Generated: css/fonts/fontawesome-webfont.eot</span><br><span class="line">INFO  Generated: libs/font-awesome/css/font-awesome.min.css</span><br><span class="line">INFO  Generated: js/jquery-3.4.1.min.js</span><br><span class="line">INFO  Generated: css/fonts/FontAwesome.otf</span><br><span class="line">INFO  Generated: css/fonts/fontawesome-webfont.ttf</span><br><span class="line">INFO  Generated: css/images/opacity-10.png</span><br><span class="line">INFO  Generated: css/images/s-left.png</span><br><span class="line">INFO  Generated: css/images/thumb-default-small.png</span><br><span class="line">INFO  Generated: libs/font-awesome/fonts/FontAwesome.otf</span><br><span class="line">INFO  Generated: css/images/thumb-default.png</span><br><span class="line">INFO  Generated: libs/jquery/3.5.0/jquery.min.js</span><br><span class="line">INFO  Generated: libs/lightgallery/fonts/lg.svg</span><br><span class="line">INFO  Generated: css/images/banner.jpg</span><br><span class="line">INFO  Generated: libs/source-code-pro/fonts/mrl8jkM18OlOQN8JLgasDy2Q8seG17bfDXYR_jUsrzg.woff2</span><br><span class="line">INFO  Generated: libs/titillium-web/fonts/anMUvcNT0H1YN4FII8wpr4-67659ICLY8bMrYhtePPA.woff2</span><br><span class="line">INFO  Generated: libs/titillium-web/fonts/anMUvcNT0H1YN4FII8wpr9INifKjd1RJ3NxxEi9Cy2w.woff2</span><br><span class="line">INFO  Generated: libs/font-awesome/fonts/fontawesome-webfont.woff</span><br><span class="line">INFO  Generated: libs/font-awesome/fonts/fontawesome-webfont.eot</span><br><span class="line">INFO  Generated: 2023/03/09/hello-world/index.html</span><br><span class="line">INFO  Generated: libs/titillium-web/fonts/anMUvcNT0H1YN4FII8wpr46gJz9aNFrmnwBdd69aqzY.woff2</span><br><span class="line">INFO  Generated: libs/lightgallery/css/lg-fb-comment-box.css</span><br><span class="line">INFO  Generated: libs/titillium-web/fonts/anMUvcNT0H1YN4FII8wpr_SNRT0fZ5CX-AqRkMYgJJo.woff2</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-autoplay.js</span><br><span class="line">INFO  Generated: libs/titillium-web/fonts/7XUFZ5tgS-tD6QamInJTcZSnX671uNZIV63UdXh3Mg0.woff2</span><br><span class="line">INFO  Generated: libs/font-awesome/fonts/fontawesome-webfont.woff2</span><br><span class="line">INFO  Generated: libs/lightgallery/img/loading.gif</span><br><span class="line">INFO  Generated: libs/lightgallery/css/lg-fb-comment-box.min.css</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-fullscreen.min.js</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-pager.js</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-video.min.js</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-share.js</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-pager.min.js</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-share.min.js</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-hash.js</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-thumbnail.min.js</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-fullscreen.js</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-autoplay.min.js</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-video.js</span><br><span class="line">INFO  Generated: libs/lightgallery/css/lightgallery.css</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-thumbnail.js</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lightgallery.js</span><br><span class="line">INFO  Generated: libs/lightgallery/css/lightgallery.min.css</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lightgallery.min.js</span><br><span class="line">INFO  Generated: libs/font-awesome/fonts/fontawesome-webfont.svg</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-zoom.min.js</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-zoom.js</span><br><span class="line">INFO  Generated: libs/lightgallery/fonts/lg.ttf</span><br><span class="line">INFO  Generated: libs/lightgallery/css/lg-transitions.css</span><br><span class="line">INFO  Generated: libs/lightgallery/js/lg-hash.min.js</span><br><span class="line">INFO  Generated: libs/lightgallery/fonts/lg.woff</span><br><span class="line">INFO  Generated: libs/lightgallery/img/youtube-play.png</span><br><span class="line">INFO  Generated: libs/lightgallery/img/vimeo-play.png</span><br><span class="line">INFO  Generated: libs/lightgallery/css/lg-transitions.css.map</span><br><span class="line">INFO  Generated: libs/lightgallery/fonts/lg.eot</span><br><span class="line">INFO  Generated: libs/lightgallery/css/lg-fb-comment-box.css.map</span><br><span class="line">INFO  Generated: libs/lightgallery/css/lightgallery.css.map</span><br><span class="line">INFO  Generated: libs/lightgallery/img/video-play.png</span><br><span class="line">INFO  Generated: libs/lightgallery/css/lg-transitions.min.css</span><br><span class="line">INFO  Generated: css/fonts/fontawesome-webfont.svg</span><br><span class="line">INFO  80 files generated in 314 ms</span><br></pre></td></tr></table></figure>
+
+<h3 id="배포하기-1"><a href="#배포하기-1" class="headerlink" title="배포하기"></a>배포하기</h3><p>아래 명령어를 입력하여 github page 에 배포한다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>실행결과</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">INFO  Validating config</span><br><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from public folder...</span><br><span class="line">INFO  Copying files from extend dirs...</span><br><span class="line">[main 1ca47fb] Site updated: 2023-03-10 23:41:16</span><br><span class="line"> 12 files changed, 1 insertion(+), 2826 deletions(-)</span><br><span class="line"> delete mode 100644 css/fonts/FontAwesome.otf</span><br><span class="line"> delete mode 100644 css/fonts/fontawesome-webfont.eot</span><br><span class="line"> delete mode 100644 css/fonts/fontawesome-webfont.svg</span><br><span class="line"> delete mode 100644 css/fonts/fontawesome-webfont.ttf</span><br><span class="line"> delete mode 100644 css/fonts/fontawesome-webfont.woff</span><br><span class="line"> delete mode 100644 css/fonts/fontawesome-webfont.woff2</span><br><span class="line"> delete mode 100644 css/images/banner.jpg</span><br><span class="line"> delete mode 100644 fancybox/jquery.fancybox.min.css</span><br><span class="line"> delete mode 100644 fancybox/jquery.fancybox.min.js</span><br><span class="line"> delete mode 100644 js/jquery-3.4.1.min.js</span><br><span class="line"> delete mode 100644 js/script.js</span><br><span class="line">Enumerating objects: 19, done.</span><br><span class="line">Counting objects: 100% (19/19), done.</span><br><span class="line">Delta compression using up to 6 threads</span><br><span class="line">Compressing objects: 100% (6/6), done.</span><br><span class="line">Writing objects: 100% (10/10), 831 bytes | 831.00 KiB/s, done.</span><br><span class="line">Total 10 (delta 2), reused 0 (delta 0), pack-reused 0</span><br><span class="line">remote: Resolving deltas: 100% (2/2), completed with 2 local objects.</span><br><span class="line">To github.com:coffeeman4/coffeeman4.github.io.git</span><br><span class="line">   a0701c1..1ca47fb  HEAD -&gt; main</span><br><span class="line">branch &#x27;main&#x27; set up to track &#x27;git@github.com:coffeeman4/coffeeman4.github.io.git/main&#x27;.</span><br><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: 시작
+e=>end: 종료
+op1=>operation: 정적인 페이지만들기
+op2=>operation: 배포하기
+st(right)->op1(right)->op2(right)->e(right)</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script>
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://coffeeman1.github.io/2023/03/01/blog/hexo/" data-id="clf2nl6vh0009ctbl5fndbt7l" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "커피맨"
+        },
+        "headline": "무료로 hexo 블로그 만들기",
+        "image": "http://coffeeman1.github.io/2023/03/01/blog/hexo/img1.png",
+        "keywords": "blog",
+        "genre": "blog",
+        "datePublished": "2023-03-01",
+        "dateCreated": "2023-03-01",
+        "dateModified": "2023-03-10",
+        "url": "http://coffeeman1.github.io/2023/03/01/blog/hexo/",
+        "description": "
+
+개요정적 웹사이트 생성기 hexo를 이용해서 블로그를 만든후 github page까지 반영하는 방법에 대해서 알아보자.커피맨 블로그를 만들면서 작업했던 내용들을 정리했고. 차근차근 따라서 진행하면 coffeeman1.github.io와같은 멋진 블로그를 무료를 만들수 있다.
+사전준비사항준비사항은 아래와 같으며 본 블로그에 1,2,3 단계에 대해서 모두 ",
+        "wordCount": 1310
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>팔로우:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/coffeeman1/coffeeman1.github.io" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2023/03/02/blog/github-regist/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">신규</strong>
+        <p class="article-nav-title">
+        
+            Github 계정생성
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+<div class="widget-wrap widget-list">
+    <h3 class="widget-title">Catalog</h3>
+    <div class="widget">
+        <div id="toc" class="toc-article">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%EA%B0%9C%EC%9A%94"><span class="toc-number">1.</span> <span class="toc-text">개요</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EC%82%AC%EC%A0%84%EC%A4%80%EB%B9%84%EC%82%AC%ED%95%AD"><span class="toc-number">2.</span> <span class="toc-text">사전준비사항</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo-%EC%84%A4%EC%B9%98"><span class="toc-number">3.</span> <span class="toc-text">hexo 설치</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo-%ED%85%8C%EB%A7%88-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0"><span class="toc-number">4.</span> <span class="toc-text">hexo 테마 적용하기</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%84%A4%EC%B9%98"><span class="toc-number">4.1.</span> <span class="toc-text">설치</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%8B%A4%ED%96%89"><span class="toc-number">4.2.</span> <span class="toc-text">실행</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo-%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95"><span class="toc-number">5.</span> <span class="toc-text">hexo 환경설정</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%B0%8F-url-%EC%A0%95%EB%B3%B4"><span class="toc-number">5.1.</span> <span class="toc-text">사이트및 url 정보</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#github-%EC%97%90-%EB%B0%B0%ED%8F%AC%EB%A5%BC-%EC%9C%84%ED%95%9C-deploy-%EC%A0%95%EB%B3%B4"><span class="toc-number">5.2.</span> <span class="toc-text">github 에 배포를 위한 deploy 정보</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0"><span class="toc-number">6.</span> <span class="toc-text">배포하기</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%A4%80%EB%B9%84%EB%AC%BC"><span class="toc-number">6.1.</span> <span class="toc-text">준비물</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%B0%B0%ED%8F%AC%EC%88%9C%EC%84%9C"><span class="toc-number">6.2.</span> <span class="toc-text">배포순서</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EC%A0%95%EC%A0%81-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0"><span class="toc-number">6.3.</span> <span class="toc-text">정적 페이지 만들기</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0-1"><span class="toc-number">6.4.</span> <span class="toc-text">배포하기</span></a></li></ol></li></ol>
+        </div>
+    </div>
+</div>
+
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">최근 글</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2023/03/04/github-page2/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2023/03/04/github-page2/github-page2.png)" alt="Github SSH 연결방법" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/blog/">blog</a></p>
+                            <p class="item-title"><a href="/2023/03/04/github-page2/" class="title">Github SSH 연결방법</a></p>
+                            <p class="item-date"><time datetime="2023-03-03T16:14:47.000Z" itemprop="datePublished">2023-03-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2023/03/04/github-page1/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2023/03/04/github-page1/github-page1.png)" alt="Github Page 생성방법" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/blog/">blog</a></p>
+                            <p class="item-title"><a href="/2023/03/04/github-page1/" class="title">Github Page 생성방법</a></p>
+                            <p class="item-date"><time datetime="2023-03-03T15:30:33.000Z" itemprop="datePublished">2023-03-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2023/03/02/blog/github-regist/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2023/03/02/blog/github-regist/github-page.png)" alt="Github 계정생성" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/blog/">blog</a></p>
+                            <p class="item-title"><a href="/2023/03/02/blog/github-regist/" class="title">Github 계정생성</a></p>
+                            <p class="item-date"><time datetime="2023-03-02T13:58:47.000Z" itemprop="datePublished">2023-03-02</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2023/03/01/blog/hexo/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/2023/03/01/blog/hexo/img1.png)" alt="무료로 hexo 블로그 만들기" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/blog/">blog</a></p>
+                            <p class="item-title"><a href="/2023/03/01/blog/hexo/" class="title">무료로 hexo 블로그 만들기</a></p>
+                            <p class="item-date"><time datetime="2023-03-01T14:11:03.000Z" itemprop="datePublished">2023-03-01</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">카테고리</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">아카이브</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">3월 2023</a><span class="archive-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">태그</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a><span class="tag-list-count">3</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">태그 클라우드</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/github/" style="font-size: 20px;">github</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">링크</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="https://coffeeman1.github.io/">coffeeman</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2023 커피맨</p>
+                
+                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    
+    
+    <script>
+    var disqus_shortname = 'coffeeman9';
+    
+    
+    var disqus_url = 'http://coffeeman1.github.io/2023/03/01/blog/hexo/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+</body>
+</html>
